@@ -23,9 +23,6 @@ Ex-jovem aprendiz na **Shopee SPX** (logística, inventário e TI) e voluntário
 **Banco de dados:** MySQL · Google Sheets
 **Ferramentas:** Git · GitHub · VS Code · IntelliJ · Netlify · Vercel · Railway
 
-## 📊 Estatísticas
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=pedrohfilho&show_icons=true&theme=default&locale=pt-br&hide_border=true)
 
 ## 📫 Contato
 
