@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Pedro Henrique. Problemas reais. Sistemas que funcionam.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0a08"/>
+      <stop offset="0.55" stop-color="#3d0d07"/>
+      <stop offset="1" stop-color="#6b1008"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e8301a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e8301a" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .serif { font-family: Georgia, 'Playfair Display', 'Times New Roman', serif; }
+      .sans  { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+      .orbit { transform-origin: 1005px 150px; animation: spin 40s linear infinite; }
+      .orbit2 { transform-origin: 1005px 150px; animation: spin 60s linear infinite reverse; }
+      .pulse { animation: pulse 3.2s ease-in-out infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes pulse { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+      @media (prefers-reduced-motion: reduce) { .orbit, .orbit2, .pulse { animation: none; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#glow)"/>
+
+  <!-- grade discreta ao fundo -->
+  <g stroke="#f5efe6" stroke-opacity="0.045" stroke-width="1">
+    <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200"/>
+    <path d="M120 0V300M240 0V300M360 0V300M480 0V300M600 0V300M720 0V300M840 0V300M960 0V300M1080 0V300"/>
+  </g>
+
+  <!-- texto -->
+  <text x="70" y="88" class="sans" font-size="14" letter-spacing="5" fill="#f5efe6" fill-opacity="0.6">PEDRO HENRIQUE  ·  SALVADOR, BA</text>
+  <text x="70" y="150" class="serif" font-size="52" font-weight="700" fill="#f5efe6">Problemas reais.</text>
+  <text x="70" y="206" class="serif" font-size="52" font-weight="700" font-style="italic" fill="#ff8a70">Sistemas que funcionam.</text>
+  <text x="70" y="254" class="sans" font-size="18" fill="#f5efe6" fill-opacity="0.82">Desenvolvedor Java em formação  ·  Spring Boot  ·  AWS</text>
+
+  <!-- monograma PH. com órbitas -->
+  <g>
+    <circle cx="1005" cy="150" r="118" fill="none" stroke="#f5efe6" stroke-opacity="0.10"/>
+    <circle cx="1005" cy="150" r="86" fill="#1a0a08" fill-opacity="0.55" stroke="#f5efe6" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text x="1005" y="170" text-anchor="middle" class="serif" font-size="58" font-weight="700" fill="#f5efe6">PH.</text>
+    <g class="orbit">
+      <circle cx="1005" cy="32" r="6" fill="#ff8a70"/>
+      <circle cx="1123" cy="150" r="4" fill="#f5efe6" fill-opacity="0.8"/>
+    </g>
+    <g class="orbit2">
+      <circle cx="1005" cy="268" r="5" fill="#f5efe6" fill-opacity="0.7"/>
+      <circle cx="887" cy="150" r="3.5" fill="#ff8a70"/>
+    </g>
+    <circle class="pulse" cx="1005" cy="150" r="102" fill="none" stroke="#ff8a70" stroke-opacity="0.45" stroke-dasharray="2 10"/>
+  </g>
+</svg>
